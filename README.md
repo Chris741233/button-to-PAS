@@ -8,5 +8,5 @@ Using a push-button to simulate pedaling on an e-bike or  replicate the PAS sens
 Pinout:
 
 <p align="left">
-  <img src="./throttle_to_pas/img/button-diagram.png" width="600" title="Arduino pinout">
+  <img src="./button_to_pas/img/button-diagram.png" width="600" title="Arduino pinout">
 </p>
