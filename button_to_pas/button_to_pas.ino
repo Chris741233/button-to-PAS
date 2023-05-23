@@ -71,7 +71,8 @@ const int LED_PIN = 13;   // CONTROLER PAS and LED (D13 = LED_BUILTIN)
 // -- activate by double-click, desactivate by click ou double-click
 // -- Warning : Using a ebike brake cut-off is not mandatory but very recommended if cruise control !
 
-#define USE_CRUISE true 
+#define USE_CRUISE false 
+
 
 #define BRAKE_MODE 1  // if ebike brake cut-off is installed, mode 0= normaly low - mode 1= normaly high (default)
 // - info : https://endless-sphere.com/sphere/threads/brake-high-brake-low.52391/
