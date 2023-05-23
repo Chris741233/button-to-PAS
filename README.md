@@ -2,10 +2,12 @@
 Arduino e-bike button to PAS (boost)<br>
 Using a push-button to simulate pedaling on an e-bike 
 <br>(or replicate the PAS sensor when pedaling with no push)
-<br> Code pour Aduino Nano/Uno
+
+<p> Code pour Aduino Nano/Uno</p>
 
 <p>
 Pour plus d'info voir aussi : <br>
+<br> more informations :<br>
  <a href="https://github.com/Chris741233/throttle-to-PAS">Throttle to PAS</a> 
 </p>
 
