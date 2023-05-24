@@ -7,7 +7,7 @@ Author      :  Chris74
 Description :  e-bike pushbutton to PAS - Arduino Uno/Nano
 - Simulation pedalage et envoi au controleur
 
-Download this code on Github : 
+Code and info on Github : https://github.com/Chris741233/button-to-PAS
 
 
 Doc PAS ebikes.ca (Signal Types for Basic PAS Sensors) : 
@@ -48,7 +48,7 @@ void setDoubleClickTime(unsigned int ms)
 
 
 
-// -------- GPIO --------------
+// -------- GPIO Arduino Uno/Nano --------------
 
 const int BUTTON_PIN = 4; // Push button D3
 
@@ -65,7 +65,7 @@ const int LED_PIN = 13;   // CONTROLER PAS and LED (D13 = LED_BUILTIN)
 // bouton appuye ou contacteur = LOW / Off / 0  
 
 
-// -------- CONSTANTES PROG ------------------------
+// -------- SETTING CONSTANTS  ------------------------
 
 // -- Cruise-control true or false (default : false)
 // -- activate by double-click, desactivate by click ou double-click
@@ -76,14 +76,15 @@ const int LED_PIN = 13;   // CONTROLER PAS and LED (D13 = LED_BUILTIN)
 
 #define BRAKE_MODE 1  // if ebike brake cut-off is installed, mode 0= normaly low - mode 1= normaly high (default)
 // - info : https://endless-sphere.com/sphere/threads/brake-high-brake-low.52391/
+// - test cruise cutting before runing !
 
 
 // -- reglages nb. d'aimants et simulation RPM pedalage
-const int   nb_poles  = 6;      // nb. d'aimants (nb. of magnets) sur le disque du PAS
-const int   simul_rpm = 40;     // RPM simulation pedalier
+const int   nb_magnets  = 6;      // nb. d'aimants (nb. of magnets) sur le disque du PAS (default 6p)
+const int   simul_rpm = 40;     // RPM simulation pedalier (default 40 rpm)
 
-// -- reglage duty cycle signal High, cf doc ebikes.ca : https://ebikes.ca/learn/pedal-assist.html 
-// -- attention var float : si nombre entier ajouter au moins une decimal .0 Par exemple 60% indiquer 60.0% !!
+// -- reglage duty-cycle signal High, cf doc ebikes.ca : https://ebikes.ca/learn/pedal-assist.html 
+// -- attention var float : si nombre entier ajouter au moins une decimal .0 Par exemple 60% indiquer 60.0% !
 const float duty_cycle = 56.70;  // % duty high signal (56.70% on my PAS, mode varied width, but 57.0% normaly Ok)
 
 
@@ -93,7 +94,7 @@ const float duty_cycle = 56.70;  // % duty high signal (56.70% on my PAS, mode v
 // **************************************************************
 
 // ne pas enlever les decimales aux chiffres entiers !
-const int simul_pas = (1000.0 / (simul_rpm / 60.0 * nb_poles)) * (duty_cycle/100);   // Signal PAS high lent en ms, % duty_cycle
+const int simul_pas = (1000.0 / (simul_rpm / 60.0 * nb_magnets)) * (duty_cycle/100);   // Signal PAS high lent en ms, % duty_cycle
 
 // calc ratio low (high/low), round 2 decimale
 const float t1 = duty_cycle / (100 - duty_cycle);
@@ -104,7 +105,7 @@ const float ratio_low = floor(100*t1+0.5)/100; // round decimal to 2 digit (10 f
 // -- ratio_low = percent / (100 - percent); // en duty high 56.75%  = ~1.30
 
 
-// -------- VARIABLES GLOBALES ----------------------
+// --------  GLOBAL VARIABLES ----------------------
 
 unsigned long start = 0;           // timer
 
