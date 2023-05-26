@@ -28,6 +28,8 @@ Régler les constantes en début de code \
   <img src="./button_to_pas/img/button-diagram.png" width="600" title="Arduino pinouts">
 </p>
 
+#### Discussion sur le forum Cyclurba :
+[Cyclurba](https://cyclurba.fr/forum/forum_discussion.php?from=11&discussionID=31032&messageID=741856&rubriqueID=87)
 ---
 
 #### Note
