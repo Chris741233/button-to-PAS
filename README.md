@@ -5,7 +5,7 @@ Use a push-button to simulate pedaling on an e-bike \
 
 > Cruise control mode in option (see constants setting)
 
-**See also**   
+**more informations, see**   
 - [Throttle to PAS](https://github.com/Chris741233/throttle-to-PAS)
 - [PAS analyzer](https://github.com/Chris741233/PAS_analyzer)
 
