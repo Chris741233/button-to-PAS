@@ -10,6 +10,16 @@ Use a push-button to simulate pedaling on an e-bike \
 - [PAS to throttle converter](https://github.com/Chris741233/PAS_to_throttle)
 - [PAS analyzer](https://github.com/Chris741233/PAS_analyzer)
 
+---
+
+#### Wiring (Arduino Uno/Nano)
+
+<p align="left">
+  <img src="./button_to_pas/img/button-diagram.png" width="600" title="Arduino pinouts">
+</p>
+
+---
+
 #### Utilisation
 Régler les constantes en début de code \
 *Adjust constants at the beginning of code*
@@ -22,18 +32,11 @@ Régler les constantes en début de code \
 
 ---
 
-
-#### Wiring (Arduino Uno/Nano)
-
-<p align="left">
-  <img src="./button_to_pas/img/button-diagram.png" width="600" title="Arduino pinouts">
-</p>
-
 #### Discussion sur le forum Cyclurba :
 
 [Cyclurba](https://cyclurba.fr/forum/forum_discussion.php?from=11&discussionID=31032&messageID=741856&rubriqueID=87)
 
----
+
 
 #### Note
   
