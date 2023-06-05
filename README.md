@@ -7,6 +7,7 @@ Use a push-button to simulate pedaling on an e-bike \
 
 **more informations, see**   
 - [Throttle to PAS](https://github.com/Chris741233/throttle-to-PAS)
+- [PAS to throttle converter](https://github.com/Chris741233/PAS_to_throttle)
 - [PAS analyzer](https://github.com/Chris741233/PAS_analyzer)
 
 #### Utilisation
