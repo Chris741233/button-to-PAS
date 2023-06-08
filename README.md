@@ -18,7 +18,11 @@ Use a push-button to simulate pedaling on an e-bike \
 #### Wiring (Arduino Uno/Nano)
 
 <p align="left">
-  <img src="./button_to_pas/img/button-diagram.png" width="600" title="Arduino pinouts">
+  <img src="./button_to_pas/img/button-diagram.jpg" width="700" title="Arduino pinouts">
+</p>
+
+<p align="left">
+  <img src="./button_to_pas/img/button-diagram_2.jpg" width="300" title="Arduino pinouts">
 </p>
 
 ---
