@@ -3,7 +3,7 @@ Arduino e-bike button to PAS (boost)\
 Use a push-button to simulate pedaling on an e-bike \
 (or replicate the PAS sensor when pedaling with no push)
 
-> Cruise control mode in option (see constants setting)
+- Cruise control mode in option (see constants setting)
 
 **more informations, see**   
 - [Throttle to PAS](https://github.com/Chris741233/throttle-to-PAS)
